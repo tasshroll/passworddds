@@ -71,11 +71,13 @@ function generatePassword() {
   // Ask user to input length of the password
   function askforpasswordlength() {
     var passwordLength = prompt("How long would you like your password? Must be 8-128 in length");
-    if (passwordLength = null) {
-      length = 8;
-    } else {
+    if (passwordLength !== "") {
       length = parseInt(passwordLength);
-    }
+      console.log ("length is ", length);
+    } else {
+      length = 8;
+      console.log ("length is ", length);
+    } 
     validatelength();
   }
 
@@ -127,11 +129,10 @@ function generatePassword() {
 
   function buildpassword() {
     // Generate the password
-    console.log("In buildpasswordd");
+    console.log("In buildpassword");
     for (let i = 0; i < length; i++) {
       var randomIndex = Math.floor(Math.random() * charset.length);
       password += charset.charAt(randomIndex);
-      console.log("password is", password);
     }
   }
 
