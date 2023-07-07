@@ -3,17 +3,24 @@ This application allows a user to generate a random password based on criteria t
 
 # passworddds Webpage
 Link to Deployed Application;
-https://tasshroll.github.io/passworddds/Develop/
+https://tasshroll.github.io/passworddds/
 
 Screenshot of application creating a password of length 90 characters with only lowercase letters.
-!(Assets/Password-screenshot.png)
-or
-https://github.com/tasshroll/passworddds/issues/1#issue-1621717123
-!(https://github.com/tasshroll/passworddds/issues/1#issue-1621717123)
+![Screenshot](Assets/Password-screenshot.png)
 
 
 ## Description
-This Application will generate a random password based on user criterria selected.
+This Application will generate a random password based on user criteria selected. Character strings will build a valid character set based on user input. Users are asked what password length they desire and what type of characters to include. Choices are 
+lowercase a-z, 
+uppercase A-Z, 
+numbers 0-9
+special characters "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~" 
+
+The random password is displayed in the text area. This code contains one function that calls several inner functions to encapsulate functionality. Global and local variables are used as well as an event listener to detect when the user clicks theh button to generate a password. The prompt attribute is used to get user data.
+
+
+To run, right click on the file index.html and choose "Open with Live Server"
+
 ## User Story
 
 ```
